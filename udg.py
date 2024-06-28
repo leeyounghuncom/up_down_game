@@ -26,5 +26,13 @@ try:
     # 모니터링
     print(f"봇: {int(bot)} 게스트: {int(guest)}")
 
+    # 입력한 숫자와 컴퓨터의 숫자를 비교하여 "업" 또는 "다운" 힌트를 제공합니다.
+    if(bot > guest) :
+        print("업")
+    elif(bot < guest) :
+        print("다운")
+    else :
+        print("맞았습니다")
+
 except ValueError:
     print("숫자만 입력하시오")
