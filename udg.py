@@ -42,9 +42,6 @@ while True :
             if nc > pc :
                 pc = nc
 
-            # 모니터링
-            print(f"봇: {int(bot)} 게스트: {int(guest)} 시도갯수: {int(nc)}")
-
         except ValueError:
             print("숫자만 입력하시오")
 
