@@ -11,13 +11,13 @@
 
 import random
 
+# 컴퓨터는 1부터 100 사이의 랜덤한 숫자를 생성합니다.
+bot = random.randint(1, 100)
+
 # 플레이어가 숫자를 맞힐 때까지 위 과정을 반복합니다.
 while True:
 
     try:
-
-        # 컴퓨터는 1부터 100 사이의 랜덤한 숫자를 생성합니다.
-        bot = random.randint(1, 100)
 
         # 플레이어는 숫자를 입력하고,
         guest = int(input("숫자를 입력하세요: "))
@@ -34,6 +34,7 @@ while True:
             print("다운")
         else:
             print("맞았습니다")
+            break
 
         # 모니터링
         print(f"봇: {int(bot)} 게스트: {int(guest)}")
